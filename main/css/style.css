@@ -1,0 +1,125 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	min-height: 400vh;
+	overflow: hidden;
+	font-family: arial
+}
+header{
+	width: 100%;
+	height: 60px;
+	display: fixed;
+	position: relative;
+	border-bottom: 1px solid rgba(0,0,0,0.1)
+}
+header .box{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+header .box .logo{
+	width: 5%;
+	height: 100%;
+	margin-left: 20px;
+}
+header .box .logo img{
+	height: 100%;
+	width: 100%;
+}
+header .box ul{
+	width: 68%;
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: 5%;
+}
+header .box ul li{
+	list-style: none;
+	margin-left: 30px;
+}
+header .box ul li a{
+	color: #000;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 500;
+	transition: .4s;
+	position: relative;
+}
+header .box ul li:nth-child(1) a{
+	color: #1d86ff;
+}
+header .box .register{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 15%;
+	height: 100%;
+}
+header .box .register button{
+	width: 100px;
+	height: 30px;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: none;
+	border-radius: 10px;
+	border: 2px solid #1d86ff;
+	font-size: 16px;
+	transition: .4s
+}
+header .box ul li a:before{
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	background: #1d86ff;
+	bottom: -5px;
+	left: 0;
+	transition: .4s;
+}
+header .box ul li a:hover:before{
+	width: 100%;
+}
+header .box .register button:hover{
+	background: #1d86ff;
+	color: #fff
+}
+/* End the header */
+.front-items{
+	width: 100%;
+	height: 500px;
+	background: url("../images/front.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.opacity{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: linear-gradient(90deg,rgba(0,0,0,0.3),transparent,rgba(0,0,0,0.3));
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.opacity .orders{
+	height: 100px;
+	position: relative;
+}
+.orders h3{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 500;
+}
+.orders h3 span{
+	color: #e03b3b;
+	font-weight: 600;
+}
