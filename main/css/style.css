@@ -13,7 +13,8 @@ header{
 	height: 60px;
 	display: fixed;
 	position: relative;
-	border-bottom: 1px solid rgba(0,0,0,0.1)
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	box-shadow: 0 0 10px inset rgba(0,0,0,.3)
 }
 header .box{
 	position: absolute;
@@ -53,7 +54,7 @@ header .box ul li a{
 	position: relative;
 }
 header .box ul li:nth-child(1) a{
-	color: #1d86ff;
+	color: #e03b3b;
 }
 header .box .register{
 	display: flex;
@@ -71,7 +72,7 @@ header .box .register button{
 	justify-content: center;
 	background: none;
 	border-radius: 10px;
-	border: 2px solid #1d86ff;
+	border: 2px solid #e03b3b;
 	font-size: 16px;
 	transition: .4s
 }
@@ -89,7 +90,7 @@ header .box ul li a:hover:before{
 	width: 100%;
 }
 header .box .register button:hover{
-	background: #1d86ff;
+	background: #e03b3b;
 	color: #fff
 }
 /* End the header */
@@ -105,7 +106,7 @@ header .box .register button:hover{
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	background: linear-gradient(90deg,rgba(0,0,0,0.3),transparent,rgba(0,0,0,0.3));
+	background: linear-gradient(90deg,rgba(0,0,0,0.4),transparent,rgba(0,0,0,0.4));
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -122,4 +123,14 @@ header .box .register button:hover{
 .orders h3 span{
 	color: #e03b3b;
 	font-weight: 600;
+	position: relative;
+}
+.orders h3 span:before{
+	content: '';
+	position: absolute;
+	bottom: -6px;
+	left: 0;
+	height: 2px;
+	width: 100%;
+	background: #e03b3b
 }
